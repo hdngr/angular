@@ -5,9 +5,9 @@ import {DependencyAnnotation} from 'angular2/di';
  * Specifies that a function for emitting events should be injected.
  *
  * NOTE: This is changing pre 1.0.
- * 
- * The directive can inject an emitter function that would emit events onto the directive host element.
- * 
+ *
+ * The directive can inject an emitter function that would emit events onto the directive host element. [TODO: active voice?]
+ *
  * @exportedAs angular2/annotations
  */
 export class EventEmitter extends DependencyAnnotation {
@@ -28,7 +28,7 @@ export class EventEmitter extends DependencyAnnotation {
  * Specifies that a function for setting host properties should be injected.
  *
  * NOTE: This is changing pre 1.0.
- * 
+ *
  * The directive can inject a property setter that would allow setting this property on the host element.
  *
  * @exportedAs angular2/annotations
@@ -53,13 +53,13 @@ export class PropertySetter extends DependencyAnnotation {
  *
  * ## Example
  *
- * suppose we have an `<input>` element and would like to know its `type`.
+ * Suppose we have an `<input>` element and want to know its `type`.
  *
  * ```html
  * <input type="text">
  * ```
  *
- * A decorator could inject string literal `text` like so:
+ * A decorator can inject string literal `text` like so:
  *
  * ```javascript
  * @Decorator({
@@ -94,7 +94,7 @@ export class Attribute extends DependencyAnnotation {
 /**
  * Specifies that a [QueryList] should be injected.
  *
- * See: [QueryList] for usage.
+ * See: [QueryList] for usage and example.
  *
  * @exportedAs angular2/annotations
  */
